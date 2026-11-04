@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lazar Popin">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Početna</title>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" width="100" height="100" alt="Logo prodavnice">
+    <h1>Prodavnica računarske opreme</h1>
+
+    <nav>
+        <div class="hamburger" onclick="meniKlik()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="meni" id="meni">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h3>Najbolja oprema za vaš računar na jednom mestu</h3>
+
+    <p>
+        Dobrodošli u našu prodavnicu računarske opreme, mesto gde se kvalitet,
+        pouzdanost i pristupačne cene spajaju na jednom mestu.
+    </p>
+
+    <p>
+        U ponudi imamo pažljivo odabrane proizvode renomiranih proizvođača,
+        kao i stručnu pomoć pri izboru odgovarajuće konfiguracije.
+    </p>
+
+    <h4>Naš asortiman uključuje:</h4>
+
+    <ul class="asortiman">
+        <li>
+            Laptopovi <br>
+            <img src="images/laptop2.png" width="150" height="150" alt="Laptop">
+        </li>
+        <li>
+            Miševi i tastature <br>
+            <img src="images/mis_tastatura.png" width="150" height="150" alt="Miš i Tastatura">
+        </li>
+        <li>
+            Monitori i ostala oprema <br>
+            <img src="images/monitor.png" width="150" height="150" alt="Monitor">
+        </li>
+    </ul>
+
+    <p>
+        Posetite nas redovno kako biste ispratili aktuelne akcije i popuste.
+        Vaše zadovoljstvo nam je na prvom mestu!
+    </p>
+    <button id="prikaziListu" onclick="prikaziListu()">Prikaži  proizvode:</button>
+    <div id="dinamickaLista"></div>
+</main>
+
+<footer>
+    <p>© 2026 Lazar Popin</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

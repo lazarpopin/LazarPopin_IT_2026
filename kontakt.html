@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lazar Popin">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kontakt</title>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" width="100" height="100" alt="Logo prodavnice">
+    <h1>Prodavnica računarske opreme</h1>
+    <nav>
+        <div class="hamburger" onclick="meniKlik()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="meni" id="meni">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <h2>Pošaljite nam poruku</h2>
+        <p><span class="obavezno">*</span> Obavezna polja</p>
+        <form onsubmit="return posaljiFormu()">
+            <label for="ime">Ime: <span class="obavezno">*</span> </label>
+            <input type="text" id="ime" name="ime">
+            <label for="prezime">Prezime: <span class="obavezno">*</span> </label>
+            <input type="text" id="prezime" name="prezime">
+            <label for="email">Email: <span class="obavezno">*</span> </label>
+            <input type="email" id="email" name="email">
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+            <div>
+                <p>Proizvodi koji vas zanimaju:</p>
+
+                <label>
+                    <input type="checkbox" id="mis"> Miš
+                </label>
+
+                <label>
+                    <input type="checkbox" id="tastatura"> Tastatura
+                </label>
+
+                <label>
+                    <input type="checkbox" id="monitor"> Monitor
+                </label>
+            </div>
+            <div>
+                <p>Željena kategorija:</p>
+
+                <label>
+                    <input type="radio" name="kategorija" id="laptop" value="Laptop"> Laptop
+                </label>
+
+                <label>
+                    <input type="radio" name="kategorija" id="dodaci" value="Dodaci"> Dodaci
+                </label>
+
+                <label>
+                    <input type="radio" name="kategorija" id="monitorRadio" value="Monitor"> Monitor
+                </label>
+            </div>
+            <label for="poruka">Poruka: <span class="obavezno">*</span> </label>
+            <textarea id="poruka"></textarea>
+            <button type="submit">Pošalji</button>
+            <button type="reset">Obriši</button>
+        </form>
+    </main>
+<footer>
+    <p>© 2026 Lazar Popin</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
