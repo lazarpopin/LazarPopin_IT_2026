@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /slike/
+Disallow: /images/
 
 sitemap: https://lazarpopin.github.io/LazarPopin_IT_2026/sitemap.xml
