@@ -2,7 +2,7 @@ let proizvodi = [
     {naziv:"Audio oprema",slika:"images/audio_oprema.png"},
     {naziv:"Kablovi", slika:"images/kablovi.png"},
     {naziv:"Gaming", slika:"images/gaming.png" },
-    {naziv:"Konzole", slika:"images/konzole.png" },
+    {naziv:"Konzole", slika:"images/konzole.png" }
 ];
 
 function srediIme(ime) {
